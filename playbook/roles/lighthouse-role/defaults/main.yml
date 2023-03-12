@@ -1,5 +1,2 @@
 ---
 lighthouse_src: https://github.com/VKCOM/lighthouse/archive/refs/heads/master.zip
-nginx_user_name: root
-
-

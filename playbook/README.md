@@ -1,9 +1,9 @@
-# 08-ansible-03-yandex
+# 08-ansible-04-role
 
 Playbook устанавливает Clickhouse, Vector и Lighthouse на три хоста, доступные по по ssh, запускает службы `clickhouse-server`, `vector`, создает базу `logs` в `clickhouse`,устанавливает и запускает веб-север nginx, разворачивает web-интерфейс `lighthouse`
 
 ### Variables
-В каталоге group_vars задаются версии дистрибутивов.
+
 | Имя           | Значение по умолчанию | Описание                        |
 | -------------- | ------------- | -----------------------------------|
 | `clickhouse_version` |  "22.3.3.44" | Версия Clickhouse |
@@ -20,13 +20,5 @@ Playbook устанавливает Clickhouse, Vector и Lighthouse на три
 
 ### Install Lighthouse
 Устанавливается веб-сервер nginx. Настраивается конфиги веб-сервера. Добавляется сервис nginx в автозагрузку. Создается директория /var/www/
-Распапковываются файлы lighthouse.
+Распаковываются файлы lighthouse.
 
-### Tags
-
-| Имя           | Значение |
-| -------------- | ------------- | 
-|clickhouse| Устанавливает только Сlickhouse| 
-|vector| Устанавливает только Vector|
-|lighthouse| Устанавливает только Lighthouse|
-   
